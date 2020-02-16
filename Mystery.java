@@ -14,14 +14,14 @@ public class Mystery
         return c;
     }
     
-    public static void traverse(Mystery z) {
+    public static void doSomething(Mystery z) {
         if (z == null) {
             return;
         }
         
-        traverse(z.a);
+        doSomething(z.a);
         System.out.println(z.run());
-        traverse(z.b);
+        doSomething(z.b);
     }
         
 }

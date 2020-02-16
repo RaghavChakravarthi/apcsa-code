@@ -7,6 +7,6 @@ public class MysteryRunner
         Mystery e = new Mystery(null, null, 4);
         Mystery a = new Mystery(b, e, 3);
         
-        Mystery.traverse(a);
+        Mystery.doSomething(a);
     }
 }
