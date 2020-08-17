@@ -18,10 +18,8 @@ public class Mystery
         if (z == null) {
             return;
         }
-        
         doSomething(z.a);
         System.out.println(z.run());
         doSomething(z.b);
-    }
-        
+    }    
 }
