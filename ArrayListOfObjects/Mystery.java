@@ -77,7 +77,10 @@ public class Mystery
             }
 
             // System.out.println("min " + students.get(minStudentIndex));
-            selectStudents.add(students.remove(minStudentIndex));
+            
+            // .remove returns the element removed
+            Student minStudent = students.remove(minStudentIndex);
+            selectStudents.add(minStudent);
         }
 
         return selectStudents;
