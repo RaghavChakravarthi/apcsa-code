@@ -1,25 +1,25 @@
 public class Mystery
 {
-    private Mystery a;
-    private Mystery b;
-    private int c;
+    private Mystery x;
+    private Mystery y;
+    private int z;
     
-    public Mystery(Mystery a, Mystery b, int c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    public Mystery(Mystery x, Mystery y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
     
     public int run() {
-        return c;
+        return z;
     }
     
-    public static void doSomething(Mystery z) {
-        if (z == null) {
+    public static void doSomething(Mystery m) {
+        if (m == null) {
             return;
         }
-        doSomething(z.a);
-        System.out.println(z.run());
-        doSomething(z.b);
+        doSomething(m.x);
+        System.out.println(m.run());
+        doSomething(m.y);
     }    
 }
